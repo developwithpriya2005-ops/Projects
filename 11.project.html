@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Arc Gauge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gauge-container">
+        <center>
+        <h2 style="height: 0px;">Average Score </h2>
+       
+        <div class="gauge-wrapper"></div>
+        <svg class="gauge" viewBox="0 0 200 100" style="width: 500px; height: 260px";>
+            
+            <path d="M 10 100 A 90 90 0 0 1 190 100"
+                  fill="none"
+                  stroke="#ddd"
+                  stroke-width="15"
+                  stroke-linecap="round" 
+           
+            <path id="blueArc"
+                  d="M 10 100 A 90 90 0 0 1 190 100"
+                  fill="none"
+                  stroke="#4AA3F0"
+                  stroke-width="15"
+                  stroke-linecap="round"
+                  stroke-dasharray="283"
+                  stroke-dashoffset="0" />
+        </svg>
+        <div class="score" id="score" style="font-size:35px;">81</div>
+    </div>
+     </center>
+
+    <script>
+        let score = 81; 
+        document.getElementById("score").textContent = score;
+
+        let arcLength = 283;
+        let offset = arcLength - (arcLength * score / 100);
+        document.getElementById("blueArc").setAttribute("stroke-dashoffset", offset);
+    </script>
+</body>
+</html>
+

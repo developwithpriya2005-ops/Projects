@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main, .nav, .nav2, .image-section, .clients-title, .client-img, .footer, .side-menu {
+    border: 2px solid black; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin-top: 30px;
+    
+
+}
+
+.main {
+    width: 1000px;
+    border: 3px solid black;
+    
+}
+
+
+h1 {
+    color: rgb(97, 196, 235);
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+
+.container {
+    display: flex;
+}
+.nav {
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(222, 68, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content-row {
+    display: flex;
+    height: 200px;
+    border-top: 1px solid black;
+}
+.side-menu {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.nav2 {
+    border: 1px solid black;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(222, 68, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-section {
+    flex: 1;
+    border: 1px solid black;
+    margin-left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(97, 196, 235);
+    font-size: 28px;
+}
+
+
+.clients-title {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients {
+    display: flex;
+}
+.client-img {
+    flex: 1;
+    border: 1px solid black;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(97, 196, 235);
+    font-size: 24px;
+}
+
+
+.footer {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+}
